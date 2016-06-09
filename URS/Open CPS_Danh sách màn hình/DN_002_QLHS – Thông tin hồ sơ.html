@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thông tin hồ sơ</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/support.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+	<!-- JS -->
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+    <!-- Sửa lỗi HTML5 cho IE 8 trở xuống -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<header>
+		<div class="header w1100">
+			<div class="logoH"><a href=""><img src="images/home/logoH.png"></a></div>
+			<div class="options">
+				<div class="opt MR30 count">
+					<a href="">
+						<i class="fa fa-inbox"></i>
+						Thông tin tài khoản
+					</a>
+					<span>3</span>
+				</div>
+				<div class="opt">
+					<a href="">
+						<i class="fa fa-power-off"></i>
+						Thoát
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<ul>
+				<li class="trangchu"><a href="">Trang chủ</a></li>
+				<li><a href="">Dịch vụ công</a></li>
+				<li class="active"><a href="">Quản lý hồ sơ</a></li>
+				<li><a href="">Quản lý giấy tờ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article>
+		<div class="main two_col row-eq-height">
+			<div class="box col col_main PA0">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#hoso" role="tab" data-toggle="tab">Hồ sơ</a></li>
+					<li role="presentation"><a href="#giayto" role="tab" data-toggle="tab">Giấy tờ</a></li>
+					<li role="presentation"><a href="#hoso_ngoai" role="tab" data-toggle="tab">Hồ sơ ngoài</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="hoso">
+						<div class="row reverse_row MB10">
+							<div class="col-sm-8">
+								<label>Thủ tục hành chính</label>
+								<input type="text" class="form-control" placeholder="Thủ tục abc" disabled>
+							</div>
+							<div class="col-sm-4">
+								<label>Mã thủ tục</label>
+								<input type="text" class="form-control" placeholder="TTHC01" disabled>
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-8">
+								<label>Cơ quan thực hiện</label>
+								<input type="text" class="form-control" placeholder="Cơ quan A" disabled>
+							</div>
+							<div class="col-sm-4">
+								<label>Mã cơ quan</label>
+								<input type="text" class="form-control" placeholder="CQA" disabled>
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-8">
+								<label>Chủ hồ sơ</label>
+								<input type="text" class="form-control" placeholder="Tên công dân hoặc tổ chức">
+							</div>
+							<div class="col-sm-4">
+								<label>Mã định danh</label>
+								<input type="text" class="form-control" placeholder="06567767">
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-12">
+								<label>Địa chỉ</label>
+								<input type="text" class="form-control" placeholder="33 Phố Hàng Phố">
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-4">
+								<label>Tỉnh thành</label>
+								<select class="form-control">
+									<option>Hà Nội</option>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<label>Quận huyện</label>
+								<select class="form-control">
+									<option>Hoàn Kiếm</option>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<label>Phường xã</label>
+								<select class="form-control">
+									<option>Hàng Mã</option>
+								</select>
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-4">
+								<label>Người liên lạc</label>
+								<input type="text" class="form-control" placeholder="Nguyễn Văn A">
+							</div>
+							<div class="col-sm-4">
+								<label>Số điện thoại</label>
+								<input type="text" class="form-control" placeholder="0123456789">
+							</div>
+							<div class="col-sm-4">
+								<label>Email</label>
+								<input type="text" class="form-control" placeholder="abc@gmail.com">
+							</div>
+						</div>
+						<div class="row reverse_row MB10">
+							<div class="col-sm-12">
+								<label>Ghi chú kèm theo</label>
+								<textarea class="form-control" rows="4"></textarea>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="giayto">Giấy tờ ...</div>
+					<div role="tabpanel" class="tab-pane" id="hoso_ngoai">Hồ sơ ngoài ...</div>
+				</div>
+			</div>
+			<div class="box col col_sub PA0">
+				<ul class="sub_menu">
+					<li>
+						<i class="fa fa-suitcase" aria-hidden="true"></i>
+						<p>
+							<span>Hồ sơ số</span><br/>
+							123456789
+						</p>
+					</li>
+					<li class="active">
+						<a href="">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+							<span>Thông tin hồ sơ</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-inbox" aria-hidden="true"></i>
+							<span>Thành phần hồ sơ</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<span>Kết quả thực hiện</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<span>Lịch sử giao dịch</span>
+						</a>
+					</li>
+				</ul>
+				<div class="text-center MB15">
+					<button class="btn btn-primary btn-sm">Lưu</button>
+					<button class="btn btn-danger btn-sm">Quay lại</button>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<footer>
+		<p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2016 - Powered by <span>OpenCPS</span></p>
+		<p>
+			Phần mềm lõi dịch vụ công nguồn mở 
+			<img class="ML10" src="images/icon_footer.png">
+		</p>
+	</footer>
+</body>
+
+</html>
